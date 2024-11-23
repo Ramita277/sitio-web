@@ -1,0 +1,232 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffccbc;
+    padding: 3rem;
+    text-align: center;
+}
+
+main{
+    width: 100%;
+  height: 100%;
+  /* Patron fachero */
+  background: linear-gradient(
+      45deg,
+      #0000 calc(25% / 3),
+      #ffffff 0 calc(50% / 3),
+      #0000 0 calc(250% / 3),
+      #ffffff 0 calc(275% / 3),
+      #0000 0
+    ),
+    linear-gradient(
+      45deg,
+      #ffffff calc(25% / 3),
+      #0000 0 calc(50% / 3),
+      #ffffff 0 25%,
+      #0000 0 75%,
+      #ffffff 0 calc(250% / 3),
+      #0000 0 calc(275% / 3),
+      #ffffff 0
+    ),
+    linear-gradient(
+      -45deg,
+      #0000 calc(25% / 3),
+      #ffffff 0 calc(50% / 3),
+      #0000 0 calc(250% / 3),
+      #ffffff 0 calc(275% / 3),
+      #0000 0
+    ),
+    linear-gradient(
+        -45deg,
+        #ffffff calc(25% / 3),
+        #0000 0 calc(50% / 3),
+        #ffffff 0 25%,
+        #0000 0 75%,
+        #ffffff 0 calc(250% / 3),
+        #0000 0 calc(275% / 3),
+        #ffffff 0
+      )
+      #ffccbc;
+  background-size: 106px 106px;
+  background-position: 0 0, 53px 53px;
+}
+
+.contenedordecasitodo{
+    background-color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #444;
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff9992;
+    transition: all 0.2s ease;
+    transform: scale(0.96);
+}
+
+
+h1, h2 {
+    color: #d84315;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.Quiensoy{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+.inicio img{
+    float: right;
+    width: 20%;
+}
+
+.Quiensoy p{
+    font-size:x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.carrusel{
+    display: flex;
+    width: 90%;
+    height: 25rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.carrusel Img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.carrusel img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+section {
+    text-align: center;
+}
+
+footer {
+    background-color: #ffccbc;
+    padding: 20px;
+    text-align: center;
+}
+
+.futercaja{
+    display: flex;
+    justify-content: center;
+}
+
+/* Profe esto es de internet y quedaba bonito */ 
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+
+  .card p{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #144c95;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
